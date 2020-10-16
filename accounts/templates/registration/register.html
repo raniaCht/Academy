@@ -1,0 +1,35 @@
+{% load bootstrap4 %}
+<section class="contact-area"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-content">
+                    <div class="row">
+                        <!-- Contact Information -->
+                        <div class="col-12 col-lg-5">
+                            <div class="contact-information wow fadeInUp" data-wow-delay="400ms">
+                                <div class="section-heading text-center">
+                                    <h3>Inscrit-Vous</h3>
+                                    <!-- <p class="mt-30">Lacinia, lacinia la cus non, fermen tum nisi. Donec et sollicitudin. Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim, et pulvinar mauris.</p> -->
+                                </div>
+
+                            
+                            </div>
+                        </div>
+                        <!-- Contact Form Area -->
+                        <div class="col-12" id="">
+                            <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
+                                <form action="{% url 'accounts:inscription' %}" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    {% bootstrap_form userform %}
+                                    {% bootstrap_form etudiantform %}
+                                    <button class="btn academy-btn mt-30" type="submit">Inscrit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

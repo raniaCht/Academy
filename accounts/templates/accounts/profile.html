@@ -1,0 +1,82 @@
+
+{% load static %}
+
+{% block body %}
+<div class="sidebar" data-color="azure" data-background-color="black" data-image="{% static 'assets/img/sidebar-2.jpg' %}">
+<div class="logo"><a href="{% url 'accounts:profil_edit' %}" class="simple-text logo-normal">
+    {{ etudiant.nom }} {{ etudiant.prenom }}
+  </a>
+</div>
+<div class="sidebar-wrapper">
+  <ul class="nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="{% url 'accounts:profil' %}">
+        <i class="material-icons">dashboard</i>
+        <p>Accueil</p>
+      </a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="{% url 'accounts:profil_edit' %}">
+        <i class="material-icons">person</i>
+        <p>Mon Profil</p>
+      </a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="{% url 'accounts:mes_cours' %}">
+        <i class="material-icons">library_books</i>
+        <p>Mes Cours</p>
+      </a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="{% url 'accounts:mes_formations' %}">
+          <i class="material-icons">content_paste</i>
+          <p>Mes Formations</p>
+        </a>
+  </li>
+  <li class="nav-item ">
+      <a class="nav-link" href="{% url 'accounts:mes_evenements' %}">
+          <i class="material-icons">bubble_chart</i>
+          <p>Mes Evenements</p>
+        </a>
+  </li>
+    <li class="nav-item ">
+        <a class="nav-link" href="{% url 'logout' %}">
+          <i class="material-icons">logout</i>
+          <p>Déconnexion</p>
+        </a>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="main-panel">
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <a class="navbar-brand" href="{% url 'accounts:profil' %}">Accueil</a>
+      </div>
+      <div class="navbar-wrapper">
+            <a class="navbar-brand" href="">Future Pioneers Academy</a>
+          </div>
+
+          <div class="navbar-wrapper">
+          </div>
+
+          <div class="navbar-wrapper">
+          </div>
+    </div>
+  </nav>
+<div class="content">
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="card card-plain">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title">Bienvenue, {{ etudiant.nom }} {{ etudiant.prenom }}</h4>
+            <p class="card-category">Vous êtes un cher membre chez nous, vous pouvez consulté vos formations, vos cours, inscrire à nouvelle formation ou cours 
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,155 @@
+{% extends "base_profil.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="sidebar" data-color="azure" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
+    <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+  <div class="logo"><a href="{% url 'accounts:profil_edit' %}" class="simple-text logo-normal">
+    {{ etudiant.nom }} {{ etudiant.prenom }}
+  </a>
+</div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li class="nav-item  ">
+            <a class="nav-link" href="{% url 'accounts:profil' %}">
+                <i class="material-icons">dashboard</i>
+                <p>Accueil</p>
+            </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'accounts:profil_edit' %}">
+              <i class="material-icons">person</i>
+              <p>User Profile</p>
+            </a>
+          </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'accounts:mes_cours' %}">
+                <i class="material-icons">library_books</i>
+                <p>Mes Cours</p>
+              </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'accounts:mes_formations' %}">
+                <i class="material-icons">content_paste</i>
+                <p>Mes Formations</p>
+              </a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'accounts:mes_evenements' %}">
+                <i class="material-icons">bubble_chart</i>
+                <p>Mes Evenements</p>
+              </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'accounts:mon_avis' %}">
+            <i class="material-icons">comment</i>
+            <p>Mon Avis</p>
+          </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'logout' %}">
+                <i class="material-icons">logout</i>
+                <p>Déconnexion</p>
+              </a>
+        </li>
+        <!-- <li class="nav-item active-pro ">
+              <a class="nav-link" href="./upgrade.html">
+                  <i class="material-icons">unarchive</i>
+                  <p>Upgrade to PRO</p>
+              </a>
+          </li> -->
+      </ul>
+    </div>
+  </div>
+  <div class="main-panel">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="{% url 'accounts:mes_evenements' %}">Mes Evenements</a>
+          </div>
+          <div class="navbar-wrapper">
+                <a class="navbar-brand" href="{% url 'accueil:accueil' %}">Future Pioneers Academy</a>
+              </div>
+    
+              <div class="navbar-wrapper">
+              </div>
+    
+              <div class="navbar-wrapper">
+              </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-header-primary">
+                <h4 class="card-title ">Mes Evenements</h4>
+                <!-- <p class="card-category"> Here is a subtitle for this table</p> -->
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    
+                      {% if mes_evenements %}
+                      <thead class=" text-primary">
+                        <th>
+                          ID
+                        </th>
+                        <th>
+                          Nom d'évenement
+                        </th>
+                        <th>
+                          Formatteur
+                        </th>
+                        <th>
+                          lieu
+                        </th>
+                        <th>
+                            Date et l'heure
+                        </th>
+                      </thead>
+                      <tbody>
+                        {% with i=0 %}
+                          {% for mon_evenement in mes_evenements %}
+
+                          <tr>
+                              <td>
+                                {{ i|add:"1" }}
+                              </td>
+                              <td>
+                                {{ mon_evenement.titre }}
+                              </td>
+                              <td>
+                                  {{ mon_evenement.formatteur }}
+                              </td>
+                              <td>
+                                  {{ mon_evenement.lieu }}
+                              </td>
+                              <td>
+                                {{ mon_evenement.date_et_heure }}
+                            </td>
+                            </tr>
+                          {% endfor %}
+                        {% endwith %}    
+                      </tbody>                    
+                      {% else %}
+                        <p>Vous n'etes participé à aucun évenement</p>
+                      {% endif %} 
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}
