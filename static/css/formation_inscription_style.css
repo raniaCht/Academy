@@ -1,0 +1,62 @@
+.inscription-form{
+    margin-top: 40px;
+    width: 800px;
+    background-color: rgb(148, 148, 226);
+    margin: auto;
+    color: cornsilk;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.nom{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0px 22px;
+    font-size: 16px;
+}
+
+.prenom{
+    position: relative;
+    left: 417px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0px 22px;
+    font-size: 16px;
+}
+
+.raniaaa{
+    padding: 30px;
+    line-height: 40px;
+    font-size: 16px;
+    height: 20px;
+}
+
+.form-control-select {
+    height: 45px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #eef3f6;
+    font-size: 12px;
+    font-style: italic;
+    border: none;
+    border-radius: 0;
+    padding: 15px;}
+    /* height: 65px;
+    line-height: 40px;
+    width: 100%;
+    background-color: #eef3f6;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0;
+    padding: 50px; }  */
+
+.form-control-select option{
+        margin: 15px;
+        }

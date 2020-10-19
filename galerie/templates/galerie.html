@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<style>
+    .main-footer-areap .footer-widget .gallery-list a {
+        position: relative;
+        z-index: 1;
+        @flex (0 0 30%);
+        max-width: 100%;
+        margin-bottom: 15px;
+        cursor: zoom-in; }
+        .main-footer-areap .footer-widget .gallery-list a::after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          content: '';
+          background-color: rgba(74, 44, 207, 0.8);
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition-duration: 500ms;
+          transition-duration: 500ms; }
+        .main-footer-areap .footer-widget .gallery-list a:hover::after {
+          opacity: 1;
+          visibility: visible; }
+</style>
+
+<div class="col-6 col-lg-4 mb-30 exemple_filtre mx-auto">
+    <div data-wow-delay="400ms" id="exemple_filtre">
+        <form method="GET">
+            {{ myfilter.form }}
+            <input type="submit" name="" value="Chercher" class="bouton_filtre mx-auto">    
+        </form>
+</div>
+</div>
+
+    <div class="main-footer-areap mt-50 section-padding-100-70">
+        <div class="container">
+    <div class="footer-widget mb-100">
+        <div class="gallery-list d-flex justify-content-between flex-wrap">
+            <div class="row">
+                {% for image in images %}
+                <a href="{{ image.image.url }}" class="col-12 col-lg-4 gallery-img" title="Gallerie Image 2"><img src="{{ image.image.url }}" style="width:500px;height:250px;" class="mx-auto" alt=""></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

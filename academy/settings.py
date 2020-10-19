@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'django_filters',
     'crispy_forms',
+    'contact',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -159,3 +160,11 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'raniachettab3@gmail.com'
+EMAIL_HOST_PASSWORD = 'lnplnvnuymsqpwyc'
+EMAIL_USE_TLS = True
+EMAIL_PORT = '587'

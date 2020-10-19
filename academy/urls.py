@@ -31,6 +31,8 @@ urlpatterns += i18n_patterns(
     path('cours/', include('cours.urls', namespace='cours')),
     path('evenement/', include('evenement.urls', namespace='evenement')),
     path('accueil/', include('accueil.urls', namespace='accueil')),
+    path('contact/', include('contact.urls', namespace='contact')),
+    path('galerie/', include('galerie.urls', namespace='galerie')),
 )
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

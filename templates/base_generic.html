@@ -1,3 +1,68 @@
-{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Connexion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+  <link rel="icon" href="{% static 'designLogin/img/core-img/logo.png' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/css/util.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'designLogin/css/main.css' %}">
+<!--===============================================================================================-->
+
+<style>
+#signup_id{
+margin-top : 10px;
+background-color: #111133;
+color : #FFF;
+}
+#signup_id:hover, #signup_id:focus{
+margin-top : 10px;
+background-color: #DB1111;
+color : #111133;
+}
+</style>
+</head>
+<body style="background-color: #666666;">
+{% block body %}
+
+{% endblock body %}
+   
   
-{% endblock %}
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/vendor/bootstrap/js/popper.js' %}"></script>
+  <script src="{% static 'designLogin/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/vendor/daterangepicker/moment.min.js' %}"></script>
+  <script src="{% static 'designLogin/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'designLogin/js/main.js' %}"></script>
+
+</body>
+</html>
