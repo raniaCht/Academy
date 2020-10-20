@@ -48,9 +48,10 @@ def profile(request):
 def profil_edit(request):
     etudiant = Etudiant.objects.get(compte=request.user)
     if request.method == 'POST':
+        
+        updateuserform = UpdateUserForm(request.POST, instance= request.user)
+        updateetudiantform = UpdateEtudiantForm(request.POST, request.FILES, instance= etudiant)
         try:
-            updateuserform = UpdateUserForm(request.POST, instance= request.user)
-            updateetudiantform = UpdateEtudiantForm(request.POST, request.FILES, instance= etudiant)
             if updateuserform.is_valid() and updateetudiantform.is_valid():
                 updateuserform.save()
                 monprofil = updateetudiantform.save(commit=False)
@@ -59,7 +60,7 @@ def profil_edit(request):
                 return redirect(reverse('accounts:profil_edit'))
             return render(request, 'accounts/user.html', {'etudiant':etudiant, 'updateuserform':updateuserform, 'updateetudiantform':updateetudiantform})
         except:
-            return render(request, 'accounts/user.html', {'msgerror': "l'image invalide"})
+            return render(request, 'accounts/user.html', {'msgerror': "l'image invalide", 'etudiant':etudiant, 'updateuserform':updateuserform, 'updateetudiantform':updateetudiantform})
     else:
         updateuserform = UpdateUserForm(instance = request.user)
         updateetudiantform = UpdateEtudiantForm(instance = etudiant)

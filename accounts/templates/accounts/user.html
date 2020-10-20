@@ -1,4 +1,7 @@
+{% extends "base_profil.html" %}
 {% load static %}
+{% load bootstrap4 %}
+{% load bootstrap %}
 
 {% block body %}
 <div class="sidebar" data-color="azure" data-background-color="black" data-image="{% static 'assets/img/sidebar-2.jpg' %}">
@@ -17,7 +20,7 @@
           <li class="nav-item active ">
             <a class="nav-link" href="{% url 'accounts:profil_edit' %}">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>Mon Profil</p>
             </a>
           </li>
         </li>
@@ -82,10 +85,17 @@
                   <h4 class="card-title">Editer le profil</h4>
                   <!-- <p class="card-category">Complete your profile</p> -->
                 </div>
+                
+                
+                  
+                
                 <div class="card-body">
                   <form action="{% url 'accounts:profil_edit' %}" method="post" enctype='multipart/form-data'>
+                    {% if msgerror %}
+                      <li style="color: red;">{{ msgerror }}</li>
+                    {% endif %}
                     {% csrf_token %}
-                    {{ updateuserform }}
+                    {% bootstrap_form updateuserform %}
                     
                     {{ updateetudiantform.nom }}
                     

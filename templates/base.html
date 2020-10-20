@@ -1,3 +1,5 @@
+{% load i18n %}
+{% get_available_languages as LANGUAGES %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -97,6 +99,10 @@
                                 <a href="{% url 'login' %}">Register / Login</a>
                             </div>
                             {% endif %}
+
+                            {% for LANGUAGE in LANGUAGES %}
+                                <p>{{ LANGUAGE.0 }} - {{ LANGUAGE.1 }}</p>
+                            {% endfor %}
                             
                         </div>
                     </div>
