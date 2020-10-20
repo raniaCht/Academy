@@ -134,7 +134,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-ugettext = lambda s:s
 LANGUAGES = [
     ('en', 'English'),
     ('fr', 'Français'),
