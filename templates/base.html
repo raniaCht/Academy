@@ -103,11 +103,13 @@
                             <form action="{% url 'set_language' %}" method="post">
                                 {% csrf_token %}
                                 <input type="hidden" name="next" value="{{ redirect_to }}">
+                                {{ LANGUAGE_CODE }}
                                 <select name="language" id="">
                                     {% get_available_languages as LANGUAGES %}
                                     {% get_language_info_list for LANGUAGES as languages %}
+                                    {% get_current_language as LANGUAGE_CODE %}
                                     {% for language in languages %}
-                                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>{{ language.name_local }} {{ language.code }}</option>
+                                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>{{ language.code }} - {{ language.name_local }} </option>
                                     {% endfor %}
                                 </select>
                                 <input type="submit" value="Go">
@@ -183,6 +185,15 @@
                                     </li>
                                     <li><a href="{% url 'formation:formation_list' %}">Formations</a></li>
                                     <li><a href="{% url 'evenement:evenement_list' %}">Evenements</a></li>
+                                    <li><a href="{% url 'cours:cours_list' %}">Galerie</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                     <!-- <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="course.html">Course</a></li>-->
                                     <li><a href="{% url 'contact:contact' %}">Contact</a></li> 
