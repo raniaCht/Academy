@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 11:50+0100\n"
+"POT-Creation-Date: 2020-10-23 19:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 #: .\templates\admin\delete_confirmation.html:14
 #: .\templates\admin\delete_selected_confirmation.html:14
 #: .\templates\admin\invalid_setup.html:6
-#: .\templates\admin\object_history.html:6
+#: .\templates\admin\object_history.html:6 .\templates\base_login.html:62
 msgid "Home"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 
 #: .\templates\admin\auth\user\change_password.html:17
 #: .\templates\admin\auth\user\change_password.html:55
-#: .\templates\admin\base.html:53
+#: .\templates\admin\base.html:53 .\templates\base_login.html:50
 msgid "Change password"
 msgstr ""
 
@@ -135,27 +135,27 @@ msgstr ""
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
 msgstr ""
 
-#: .\templates\admin\base.html:39
+#: .\templates\admin\base.html:39 .\templates\base_login.html:36
 msgid "Welcome,"
 msgstr ""
 
-#: .\templates\admin\base.html:44
+#: .\templates\admin\base.html:44 .\templates\base_login.html:41
 msgid "View site"
 msgstr ""
 
-#: .\templates\admin\base.html:49
+#: .\templates\admin\base.html:49 .\templates\base_login.html:46
 msgid "Documentation"
 msgstr ""
 
-#: .\templates\admin\base.html:55
+#: .\templates\admin\base.html:55 .\templates\base_login.html:52
 msgid "Log out"
 msgstr ""
 
-#: .\templates\admin\base_site.html:3
+#: .\templates\admin\base_site.html:3 .\templates\login_tmplate.html:3
 msgid "Django site admin"
 msgstr ""
 
-#: .\templates\admin\base_site.html:6
+#: .\templates\admin\base_site.html:6 .\templates\login_tmplate.html:6
 msgid "Django administration"
 msgstr ""
 
@@ -401,3 +401,44 @@ msgstr ""
 #, python-format
 msgid "Delete selected %(model)s"
 msgstr ""
+
+#: .\templates\base.html:99
+msgid "S'inscrire / se connecter"
+msgstr "register / login"
+
+#: .\templates\base.html:147
+msgid "Accueil"
+msgstr "Home"
+
+#: .\templates\base.html:158
+msgid "Cours"
+msgstr "Courses"
+
+#: .\templates\base.html:186
+msgid "Formations"
+msgstr "Formations"
+
+#: .\templates\base.html:187
+msgid "Evènements"
+msgstr "Events"
+
+#: .\templates\base.html:188
+msgid "Galerie"
+msgstr "Gallery"
+
+#: .\templates\base.html:191
+msgid "Galerie des formations"
+msgstr "Formations gallery"
+
+#: .\templates\base.html:194
+msgid "Galerie des èvènements"
+msgstr "Events gallery"
+
+#: .\templates\base.html:200
+msgid "Contact"
+msgstr "Contact"
+
+#, fuzzy
+#~| msgid "Contact"
+#~ msgid "Contact Us"
+#~ msgstr "Contact"

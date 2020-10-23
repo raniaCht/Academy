@@ -17,14 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\formation\models.py:21
-msgid "Gold"
-msgstr ""
-
-#: .\formation\models.py:22
-msgid "Normal"
-msgstr ""
-
-#: .\formation\views.py:44
-msgid "Vous être déjà inscrit à cette formation"
+#: .\evenement\views.py:41
+msgid "Vous être déjà inscrit à cet evenement"
 msgstr ""

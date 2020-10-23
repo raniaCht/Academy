@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 11:49+0100\n"
+"POT-Creation-Date: 2020-10-23 19:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,48 @@ msgstr "ذكر"
 msgid "Femme"
 msgstr "أنثى"
 
-#: .\accounts\templates\accounts\index.html:4
-msgid "my name is rania"
-msgstr "انا اسمي رانيا"
+#: .\accounts\templates\registration\logged_out.html:6
+msgid "Déconnecté!"
+msgstr "تسجيل الخروج!"
 
-#: .\accounts\templates\registration\login.html:31
-msgid "login"
+#: .\accounts\templates\registration\logged_out.html:7
+msgid "Cliquez ici pour vous reconnecter."
+msgstr "انقر هنا لتسجيل الدخول مرة أخرى."
+
+#: .\accounts\templates\registration\login.html:10
+msgid "Connexion"
 msgstr "تسجيل الدخول"
 
-#: .\accounts\templates\registration\login.html:36
-msgid "Lost password ?"
-msgstr "كلمة مرور مفقودة ؟"
+#: .\accounts\templates\registration\login.html:14
+msgid ""
+"Votre nom d'utilisateur et votre mot de passe ne correspondent pas. Veuillez "
+"réessayer."
+msgstr "اسم المستخدم وكلمة المرور غير متطابقين. حاول مرة اخرى."
 
-#: .\accounts\views.py:8
+#: .\accounts\templates\registration\login.html:19
+msgid ""
+"Votre compte n'a pas accès à cette page. Pour continuer, veuillez vous "
+"connecter avec un compte qui y a accès."
+msgstr ""
+"حسابك ليس لديه حق الوصول إلى هذه الصفحة. للمتابعة ، يرجى تسجيل الدخول "
+"باستخدام حساب له حق الوصول."
+
+#: .\accounts\templates\registration\login.html:21
+msgid "Veuillez vous connecter pour voir cette page."
+msgstr "الرجاء تسجيل الدخول لرؤية هذه الصفحة."
+
+#: .\accounts\templates\registration\login.html:28
+msgid "connexion"
+msgstr "تسجيل الدخول"
+
+#: .\accounts\templates\registration\login.html:32
+msgid "Créer nouveau compte"
+msgstr "انشاء حساب جديد"
+
+#: .\accounts\templates\registration\login.html:37
+msgid "Mot de passe perdu?"
+msgstr "كلمة المرور المفقودة؟"
+
+#: .\accounts\views.py:16
 msgid "Hello"
-msgstr "مرحبا"
+msgstr ""

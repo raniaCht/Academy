@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,9 +43,17 @@ color : #111133;
 </style>
 </head>
 <body style="background-color: #666666;">
-{% block body %}
 
-{% endblock body %}
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+{% block content %}
+
+{% endblock content %}
+        <div class="login100-more" style="background-image: url('{% static 'designLogin/images/bg.jpg' %}');"> </div>
+      </div>
+    </div>
+  </div>
    
   
 <!--===============================================================================================-->

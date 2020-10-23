@@ -1,6 +1,9 @@
 {% extends "base_generic.html" %}
+{% load i18n %}
 
 {% block content %}
-  <p>Logged out!</p>  
-  <a href="{% url 'login'%}">Click here to login again.</a>
+<form method="post" action="{% url 'login' %}" class="login100-form validate-form">
+  <span class="login100-form-title p-b-43 toto">{% trans "Déconnecté!" %}</span>  
+  <a href="{% url 'login'%}">{% trans "Cliquez ici pour vous reconnecter." %}</a>
+</form>
 {% endblock %}

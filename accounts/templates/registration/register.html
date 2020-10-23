@@ -1,4 +1,51 @@
+{% load static %}
 {% load bootstrap4 %}
+{% bootstrap_css%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Future Pioneers Academy</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/logo.png' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'gijgo/css/gijgo.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/formation_inscription_style.css' %}">
+
+    <style>
+  
+        .detail-w-m-f{
+        margin-top : 100px;
+        }
+        .rania{
+        color:#000000;
+        
+        }
+        /* .chettb{
+        margin-left : 10px;
+        } */
+        </style>
+
+</head>
+
+<body>
+
+<!-- <div class="top-popular-courses-area mt-50 section-padding-100-70">
+    
+</div> -->
+<br><br><br><br><br><br><br><br>
 <section class="contact-area"> 
     <div class="container">
         <div class="row">
@@ -33,3 +80,35 @@
         </div>
     </div>
 </section>
+
+<div class="bottom-footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+<!-- Popper js -->
+<script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+<!-- Bootstrap js -->
+<script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+<!-- All Plugins js -->
+<script src="{% static 'js/plugins/plugins.js' %}"></script>
+<!-- Active js -->
+<script src="{% static 'gijgo/js/gijgo.min.js' %}"></script>
+
+
+<script>
+$('#datepicker').datepicker();
+</script>
+</body>
+
+</html>

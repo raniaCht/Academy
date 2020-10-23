@@ -96,7 +96,7 @@
                             </div>
                             {% else %}
                             <div class="login-content">
-                                <a href="{% url 'login' %}">Register / Login</a>
+                                <a href="{% url 'login' %}">{% trans "S'inscrire / se connecter" %}</a>
                             </div>
                             {% endif %}
 
@@ -144,7 +144,7 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="{% url 'accueil:accueil' %}">Acceuil</a></li>
+                                    <li><a href="{% url 'accueil:accueil' %}">{% trans 'Accueil' %}</a></li>
                                     <!-- <li><a href="#">Formations</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
@@ -155,7 +155,7 @@
                                             <li><a href="elements.html">Elements</a></li>
                                         </ul>
                                     </li> -->
-                                    <li><a href="{% url 'cours:cours_list' %}">Cours</a>
+                                    <li><a href="{% url 'cours:cours_list' %}">{% trans 'Cours' %}</a>
                                         <!-- <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
                                                 <li><a href="#">Home</a></li>
@@ -183,20 +183,21 @@
                                             </div>
                                         </div> -->
                                     </li>
-                                    <li><a href="{% url 'formation:formation_list' %}">Formations</a></li>
-                                    <li><a href="{% url 'evenement:evenement_list' %}">Evenements</a></li>
-                                    <li><a href="{% url 'cours:cours_list' %}">Galerie</a>
+                                    <li><a href="{% url 'formation:formation_list' %}">{% trans 'Formations' %}</a></li>
+                                    <li><a href="{% url 'evenement:evenement_list' %}">{% trans 'Evènements' %}</a></li>
+                                    <li><a>{% trans 'Galerie' %}</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#">Home</a></li>
+                                                <li><a href="{% url 'galerie:formation' %}">{% trans 'Galerie des formations' %}</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="{% url 'galerie:evenement' %}">{% trans 'Galerie des èvènements' %}</a></li>
                                             </ul>
                                         </div>
                                     </li>
                                     <!-- <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="course.html">Course</a></li>-->
-                                    <li><a href="{% url 'contact:contact' %}">Contact</a></li> 
+                                    <li><a href="{% url 'contact:contact' %}">{% trans 'Contact' %}</a></li> 
                                 </ul>
                             </div>
                             <!-- Nav End -->

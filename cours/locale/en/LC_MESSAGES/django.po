@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 11:50+0100\n"
+"POT-Creation-Date: 2020-10-23 19:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,22 +16,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\cours\models.py:5
+
+#: .\cours\models.py:6
 msgid "Pre Primary"
 msgstr ""
 
-#: .\cours\models.py:6
+#: .\cours\models.py:7
 msgid "Primary"
 msgstr ""
 
-#: .\cours\models.py:7
+#: .\cours\models.py:8
 msgid "Middle"
 msgstr ""
 
-#: .\cours\models.py:8
+#: .\cours\models.py:9
 msgid "Secondary"
 msgstr ""
 
-#: .\cours\models.py:9
+#: .\cours\models.py:10
 msgid "University"
+msgstr ""
+
+#: .\cours\views.py:40
+msgid "Vous être déjà inscrit à cette cours"
 msgstr ""

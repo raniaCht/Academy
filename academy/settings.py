@@ -142,10 +142,8 @@ LANGUAGES = [
 
 LOCALE_PATHS = ( 
     os.path.join(BASE_DIR, "locale"),
-    os.path.join(BASE_DIR, "accounts/locale"), 
 )
 
-print(LOCALE_PATHS) 
 
 
 # Static files (CSS, JavaScript, Images)
@@ -169,3 +167,4 @@ EMAIL_HOST_USER = 'raniachettab3@gmail.com'
 EMAIL_HOST_PASSWORD = 'lnplnvnuymsqpwyc'
 EMAIL_USE_TLS = True
 EMAIL_PORT = '587'
+

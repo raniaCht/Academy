@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 11:49+0100\n"
+"POT-Creation-Date: 2020-10-23 19:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,26 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: .\cours\models.py:5
+#: .\cours\models.py:6
 msgid "Pre Primary"
 msgstr "تحضيري"
 
-#: .\cours\models.py:6
+#: .\cours\models.py:7
 msgid "Primary"
 msgstr "ابتدائي"
 
-#: .\cours\models.py:7
+#: .\cours\models.py:8
 msgid "Middle"
 msgstr "متوسط"
 
-#: .\cours\models.py:8
+#: .\cours\models.py:9
 msgid "Secondary"
 msgstr "ثانوي"
 
-#: .\cours\models.py:9
+#: .\cours\models.py:10
 msgid "University"
 msgstr "جامعي"
+
+#: .\cours\views.py:40
+msgid "Vous être déjà inscrit à cette cours"
+msgstr ""
