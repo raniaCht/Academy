@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block body %}
@@ -13,9 +14,9 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h4 data-animation="fadeInUp" data-delay="100ms" style="color:  #302e91;">académie des pionnier future</h4>
-                                <h2 data-animation="fadeInUp" data-delay="400ms" style="color:  #302e91;">Bienvenue à notre <br>école</h2>
-                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Lire la suite</a>
+                                <h4 data-animation="fadeInUp" data-delay="100ms" style="color:  #302e91;">{% trans "académie des pionnier future" %}</h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms" style="color:  #302e91;">{% trans "Bienvenue à notre" %} <br>{% trans "école" %}</h2>
+                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">{% trans "Lire la suite" %}</a>
                             </div>
                         </div>
                     </div>
@@ -28,9 +29,9 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h4 data-animation="fadeInUp" data-delay="100ms" style="color:  #302e91;">Tous les cours dont vous avez besoin</h4>
-                                <h2 data-animation="fadeInUp" data-delay="400ms" style="color: #302e91;">Bienvenue dans notre <br>académie</h2>
-                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Lire la suite</a>
+                                <h4 data-animation="fadeInUp" data-delay="100ms" style="color:  #302e91;">{% trans "Tous les cours dont vous avez besoin" %}</h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms" style="color: #302e91;">{% trans "Bienvenue dans notre" %} <br>{% trans "académie" %}</h2>
+                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">{% trans "Lire la suite" %}</a>
                             </div>
                         </div>
                     </div>
@@ -50,22 +51,22 @@
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
-                                    <i class="icon-agenda-1"></i>
-                                    <h5>Online Courses</h5>
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <h5>{% trans "cours pour tous les niveaux" %}</h5>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <i class="icon-assistance"></i>
-                                    <h5>Amazing Teachers</h5>
+                                    <h5>{% trans "enseignants compétents" %}</h5>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
-                                    <i class="icon-telephone-3"></i>
-                                    <h5>Great Support</h5>
+                                    <i class="fa fa-briefcase"></i>
+                                    <h5>{% trans "matériels disponible" %}</h5>
                                 </div>
                             </div>
                         </div>
@@ -84,11 +85,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="300ms">
                         <div class="course-icon">
-                            <i class="icon-id-card"></i>
+                            <i class="fa fa-language"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Business School</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h4>{% trans "les langues étrangères" %}</h4>
                         </div>
                     </div>
                 </div>
@@ -96,11 +96,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="400ms">
                         <div class="course-icon">
-                            <i class="icon-worldwide"></i>
+                            <i class="fa fa-steam"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Marketing</h4>
-                            <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                            <h4>{% trans "Robotique" %}</h4>
                         </div>
                     </div>
                 </div>
@@ -108,11 +107,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="500ms">
                         <div class="course-icon">
-                            <i class="icon-map"></i>
+                            <i class="fa fa-microchip"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Photography</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h5>{% trans "Conception et fabrication de cartes électroniques" %}</h5>
                         </div>
                     </div>
                 </div>
@@ -120,11 +118,20 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="600ms">
                         <div class="course-icon">
-                            <i class="icon-like"></i>
+                            <i class="fa fa-laptop"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Social Media</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h4>{% trans "Informatique" %}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="course-icon">
+                            <i class="fa fa-wrench"></i>
+                        </div>
+                        <div class="course-content">
+                            <h4>{% trans "Réparation des ordinateurs" %}</h4>
                         </div>
                     </div>
                 </div>
@@ -132,11 +139,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="700ms">
                         <div class="course-icon">
-                            <i class="icon-responsive"></i>
+                            <i class="fa fa-sitemap"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Development</h4>
-                            <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                            <h4>{% trans "Réseau d'information" %}</h4>
                         </div>
                     </div>
                 </div>
@@ -144,11 +150,50 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
                         <div class="course-icon">
-                            <i class="icon-message"></i>
+                            <i class="fa fa-wrench"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Design</h4>
-                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                            <h5>{% trans "Réparation de téléphones portables et de clés USB" %}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="course-icon">
+                            <i class="fa fa-cube"></i>
+                        </div>
+                        <div class="course-content">
+                            <h4>{% trans "Arithmétique mentale - Soroban" %}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="course-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="course-content">
+                            <h4>{% trans "Programmation" %}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="course-icon">
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                        <div class="course-content">
+                            <h4>{% trans "Développement humain" %}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="course-icon">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <div class="course-content">
+                            <h4>{% trans "Secrétariat et conseils administratifs" %}</h4>
                         </div>
                     </div>
                 </div>
@@ -158,13 +203,13 @@
     <!-- ##### Course Area End ##### -->
 
     <!-- ##### Testimonials Area Start ##### -->
-    <div class="testimonials-area section-padding-100 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-2.jpg);">
+    <div class="testimonials-area section-padding-100 bg-img bg-overlay" style="background-image: url(/static/img/bg-img/bg-2.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto white wow fadeInUp" data-wow-delay="300ms">
-                        <span>nos témoignages</span>
-                        <h3>Voyez ce que nos clients satisfaits disent de nous</h3>
+                        <span>{% trans "nos témoignages" %}</span>
+                        <h3>{% trans "Voyez ce que nos clients satisfaits disent de nous" %}</h3>
                     </div>
                 </div>
             </div>
@@ -187,8 +232,10 @@
                         </div>
                     {% endfor %}
                 {% else %}
-                    <div class="col-12 col-md-6 mx-auto">
-                        Aucun Commentaire
+                    <div class="col-12">
+                        <div class="section-heading text-center mx-auto red wow fadeInUp" data-wow-delay="700ms">
+                            <h3 style="color: #73738067;">{% trans "Il n'y a pas commentaires" %}</h3>
+                        </div>
                     </div>
                 {% endif %}
                 
@@ -198,7 +245,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="800ms">
-                        <a href="{% url 'accueil:avis' %}" class="btn academy-btn">Voir plus</a>
+                        <a href="{% url 'accueil:avis' %}" class="btn academy-btn">{% trans "Voir plus" %}</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +255,7 @@
     <!-- ##### Testimonials Area End ##### -->
 
     <!-- ##### Top Popular Courses Area Start ##### -->
-    <div class="top-popular-courses-area section-padding-100-70">
+    <!-- <div class="top-popular-courses-area section-padding-100-70">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -220,7 +267,6 @@
             </div>
             <div class="row">
                
-                <!-- Single Top Popular Course -->
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
                         <div class="popular-course-content">
@@ -240,7 +286,6 @@
                     </div>
                 </div>
                 
-                <!-- Single Top Popular Course -->
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
                         <div class="popular-course-content">
@@ -260,7 +305,6 @@
                     </div>
                 </div>
                 
-                <!-- Single Top Popular Course -->
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
                         <div class="popular-course-content">
@@ -280,7 +324,6 @@
                     </div>
                 </div>
                 
-                <!-- Single Top Popular Course -->
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
                         <div class="popular-course-content">
@@ -301,7 +344,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ##### Top Popular Courses Area End ##### -->
 
     <!-- ##### Partner Area Start ##### -->
@@ -321,23 +364,6 @@
         </div>
     </div>
     <!-- ##### Partner Area End ##### -->
-
-    <!-- ##### CTA Area Start ##### -->
-    {% if not request.user.is_authenticated %}
-    <div class="call-to-action-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cta-content d-flex align-items-center justify-content-between flex-wrap">
-                        <h3>Do you want to enrole at our Academy? Get in touch!</h3>
-                        <a href="#" class="btn academy-btn">See More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    <!-- ##### CTA Area End ##### -->
 
 
 {% endblock body %}

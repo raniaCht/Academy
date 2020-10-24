@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-24 18:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accueil\templates\accueil.html:17
+msgid "académie des pionnier future"
+msgstr "Future Pioneers Academy"
+
+#: .\accueil\templates\accueil.html:18
+msgid "Bienvenue à notre"
+msgstr "Welcome to our"
+
+#: .\accueil\templates\accueil.html:18
+msgid "école"
+msgstr "school"
+
+#: .\accueil\templates\accueil.html:19 .\accueil\templates\accueil.html:34
+msgid "Lire la suite"
+msgstr "read more"
+
+#: .\accueil\templates\accueil.html:32
+msgid "Tous les cours dont vous avez besoin"
+msgstr "All the courses you need"
+
+#: .\accueil\templates\accueil.html:33
+msgid "Bienvenue dans notre"
+msgstr "Welcome to our"
+
+#: .\accueil\templates\accueil.html:33
+msgid "académie"
+msgstr "academy"
+
+#: .\accueil\templates\accueil.html:55
+msgid "cours pour tous les niveaux"
+msgstr "Courses for all levels"
+
+#: .\accueil\templates\accueil.html:62
+msgid "enseignants compétents"
+msgstr "Competent teachers"
+
+#: .\accueil\templates\accueil.html:69
+msgid "matériels disponible"
+msgstr "Available equipment"
+
+#: .\accueil\templates\accueil.html:91
+msgid "les langues étrangères"
+msgstr "foreign languages"
+
+#: .\accueil\templates\accueil.html:102
+msgid "Robotique"
+msgstr "Robotic"
+
+#: .\accueil\templates\accueil.html:113
+msgid "Conception et fabrication de cartes électroniques"
+msgstr "Design and manufacture of electronic boards"
+
+#: .\accueil\templates\accueil.html:124
+msgid "Informatique"
+msgstr "Media automated"
+
+#: .\accueil\templates\accueil.html:134
+msgid "Réparation des ordinateurs"
+msgstr "Computer repair"
+
+#: .\accueil\templates\accueil.html:145
+msgid "Réseau d'information"
+msgstr "Informational network"
+
+#: .\accueil\templates\accueil.html:156
+msgid "Réparation de téléphones portables et de clés USB"
+msgstr "Repairing mobile phones and flash drives"
+
+#: .\accueil\templates\accueil.html:166
+msgid "Arithmétique mentale - Soroban"
+msgstr "Mental arithmetic - Soroban"
+
+#: .\accueil\templates\accueil.html:176
+msgid "Programmation"
+msgstr "Programming"
+
+#: .\accueil\templates\accueil.html:186
+msgid "Développement humain"
+msgstr "Human Development"
+
+#: .\accueil\templates\accueil.html:196
+msgid "Secrétariat et conseils administratifs"
+msgstr "Secretarial work and management consulting"
+
+#: .\accueil\templates\accueil.html:211
+msgid "nos témoignages"
+msgstr "our testimonials"
+
+#: .\accueil\templates\accueil.html:212
+msgid "Voyez ce que nos clients satisfaits disent de nous"
+msgstr "Do you want to enrole at our Academy? Get in touch!"
+
+#: .\accueil\templates\accueil.html:237
+msgid "Il n'y a pas commentaires"
+msgstr "there are no comments"
+
+#: .\accueil\templates\accueil.html:248
+msgid "Voir plus"
+msgstr "See More"

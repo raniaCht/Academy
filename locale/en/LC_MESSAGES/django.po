@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 19:58+0100\n"
+"POT-Creation-Date: 2020-10-24 18:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -402,41 +402,76 @@ msgstr ""
 msgid "Delete selected %(model)s"
 msgstr ""
 
+#: .\templates\base.html:92
+msgid "Profil"
+msgstr "Profile"
+
+#: .\templates\base.html:94
+msgid "Retour à la page d'administrateur"
+msgstr "Back to admin page"
+
 #: .\templates\base.html:99
 msgid "S'inscrire / se connecter"
 msgstr "register / login"
 
-#: .\templates\base.html:147
+#: .\templates\base.html:147 .\templates\base.html:234
 msgid "Accueil"
 msgstr "Home"
 
-#: .\templates\base.html:158
+#: .\templates\base.html:148 .\templates\base.html:235
 msgid "Cours"
 msgstr "Courses"
 
-#: .\templates\base.html:186
+#: .\templates\base.html:149 .\templates\base.html:236
 msgid "Formations"
 msgstr "Formations"
 
-#: .\templates\base.html:187
+#: .\templates\base.html:150 .\templates\base.html:237
 msgid "Evènements"
 msgstr "Events"
 
-#: .\templates\base.html:188
+#: .\templates\base.html:151
 msgid "Galerie"
 msgstr "Gallery"
 
-#: .\templates\base.html:191
+#: .\templates\base.html:154
 msgid "Galerie des formations"
 msgstr "Formations gallery"
 
-#: .\templates\base.html:194
+#: .\templates\base.html:157
 msgid "Galerie des èvènements"
 msgstr "Events gallery"
 
-#: .\templates\base.html:200
+#: .\templates\base.html:163
 msgid "Contact"
 msgstr "Contact"
+
+#: .\templates\base.html:194
+msgid "Voulez-vous vous inscrire à notre Académie? Entrer en contact!"
+msgstr "Do you want to enroll at our Academy? Get in touch!"
+
+#: .\templates\base.html:195
+msgid "voir plus"
+msgstr "see more"
+
+#: .\templates\base.html:216
+msgid ""
+"Notre mission est de fournir des cours de soutiens de toutes les matières "
+"pour tous les niveaux, les formations qui peuvent vous aiderez dans votre "
+"vies commercielle."
+msgstr ""
+"Our mission is to provide support courses in all subjects for all levels, "
+"training that can help you in your business life."
+
+#: .\templates\base.html:230
+msgid "liens"
+msgstr "links"
+
+#: .\templates\base.html:246
+#, fuzzy
+#| msgid "Galerie"
+msgid "Gallerie"
+msgstr "Gallery"
 
 #, fuzzy
 #~| msgid "Contact"
