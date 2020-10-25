@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
+{% load bootstrap %}
 
 {% block body %}
 <!-- ##### Breadcumb Area Start ##### -->
 <div class="breadcumb-area bg-img" style="background-image: url(/static/img/bg-img/courssoutien.jpg);">
     <div class="bradcumbContent">
-        <h2>Nos Cours</h2>
+        <h2>{% trans "Nos Cours" %}</h2>
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
@@ -16,7 +18,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <span>les</span>
+                    <!-- <span>les</span> -->
                     <!-- <h3>Formations les plus populaires</h3> -->
                 </div>
             </div>
@@ -25,15 +27,12 @@
             <div data-wow-delay="400ms" id="exemple_filtre">
                 <form method="GET">
                     <div class="col">
-                        {{ myfilter.form.niveau }}
+                        {{ myfilter.form.niveau|bootstrap }}
+                        {{ myfilter.form.annee|bootstrap }}
+                        {{ myfilter.form.matiere|bootstrap }}
+                        <input type="submit" name="" value="{% trans 'Chercher' %}" class="bouton_filtre mx-auto">    
                     </div>
-                    <div class="col">
-                        {{ myfilter.form.annee }}
-                    </div>
-                    <div class="col">
-                        {{ myfilter.form.matiere }}
-                    </div>
-                    <input type="submit" name="" value="Chercher" class="bouton_filtre mx-auto">    
+                    
                 </form>
         </div>
         </div>
@@ -44,9 +43,9 @@
                 <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
                     <div class="popular-course-content">
                         <h5>{{ cour.matiere.nom }}</h5>
-                        <p>Niveau scolaire est : {{ cour.niveau.nom }}</p>
-                        <p>Année est : {{ cour.annee.nom }} </p>
-                        <a href="{% url 'cours:cours_detail' cour.id %}" class="btn academy-btn btn-sm">Plus de Détail</a>
+                        <p>{% trans "Niveau scolaire est" %} : {{ cour.niveau.nom }}</p>
+                        <p>{% trans "Année est" %} : {{ cour.annee.nom }} </p>
+                        <a href="{% url 'cours:cours_detail' cour.id %}" class="btn academy-btn btn-sm">{% trans "Plus de Détail" %}</a>
                     </div>
                     <!-- <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-1.jpg);"></div> -->
                 </div>
@@ -57,50 +56,5 @@
 </div>
 <!-- ##### Top Popular Courses Area End ##### -->
 
-
-<!-- ##### Course Area Start ##### -->
-<div class="academy-courses-area section-padding-100-0">
-    <div class="container">
-        <div class="row">
-            <!-- Single Course Area -->
-            <div class="col-12 col-lg-4">
-                <div class="single-course-area d-flex align-items-center mb-100">
-                    <div class="course-icon">
-                        <i class="icon-id-card"></i>
-                    </div>
-                    <div class="course-content">
-                        <h4>Business School</h4>
-                        <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Course Area -->
-            <div class="col-12 col-lg-4">
-                <div class="single-course-area d-flex align-items-center mb-100">
-                    <div class="course-icon">
-                        <i class="icon-worldwide"></i>
-                    </div>
-                    <div class="course-content">
-                        <h4>Marketing</h4>
-                        <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Course Area -->
-            <div class="col-12 col-lg-4">
-                <div class="single-course-area d-flex align-items-center mb-100">
-                    <div class="course-icon">
-                        <i class="icon-map"></i>
-                    </div>
-                    <div class="course-content">
-                        <h4>Photography</h4>
-                        <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### Course Area End ##### -->
 
 {% endblock body %}

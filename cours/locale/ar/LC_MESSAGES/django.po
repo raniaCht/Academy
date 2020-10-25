@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-24 18:43+0100\n"
+"POT-Creation-Date: 2020-10-25 20:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,81 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: .\cours\models.py:6
-msgid "Pre Primary"
+msgid "pré primaire"
 msgstr "تحضيري"
 
 #: .\cours\models.py:7
-msgid "Primary"
+msgid "primaire"
 msgstr "ابتدائي"
 
 #: .\cours\models.py:8
-msgid "Middle"
-msgstr "متوسط"
+msgid "moyen"
+msgstr "متوسطة"
 
 #: .\cours\models.py:9
-msgid "Secondary"
+msgid "lycée"
 msgstr "ثانوي"
 
 #: .\cours\models.py:10
-msgid "University"
+msgid "Université"
 msgstr "جامعي"
+
+#: .\cours\models.py:44
+msgid "Niveau scolaire"
+msgstr "المستوى الدراسي"
+
+#: .\cours\models.py:45 .\cours\templates\cours_detail.html:33
+msgid "Année"
+msgstr "سنة"
+
+#: .\cours\models.py:46
+msgid "Matière"
+msgstr "المادة"
+
+#: .\cours\templates\cours_detail.html:9
+msgid "Info Sur Cours"
+msgstr "معلومات حول الدرس"
+
+#: .\cours\templates\cours_detail.html:27
+msgid "Inscrire Au Cours"
+msgstr "التسجيل في الدرس"
+
+#: .\cours\templates\cours_detail.html:31
+msgid "à propos de cours"
+msgstr "حول الدرس"
+
+#: .\cours\templates\cours_detail.html:32
+msgid "Niveau Scolaire"
+msgstr "المستوى الدراسي"
+
+#: .\cours\templates\cours_detail.html:37
+msgid "Plus sur le cours"
+msgstr "المزيد عن الدرس"
+
+#: .\cours\templates\cours_detail.html:41
+msgid "Prix"
+msgstr "السعر"
+
+#: .\cours\templates\cours_list.html:10
+msgid "Nos Cours"
+msgstr "دروسنا"
+
+#: .\cours\templates\cours_list.html:33
+msgid "Chercher"
+msgstr "بحث"
+
+#: .\cours\templates\cours_list.html:46
+msgid "Niveau scolaire est"
+msgstr "المستوى الدراسي"
+
+#: .\cours\templates\cours_list.html:47
+msgid "Année est"
+msgstr "السنة"
+
+#: .\cours\templates\cours_list.html:48
+msgid "Plus de Détail"
+msgstr "المزيد من التفاصيل"
 
 #: .\cours\views.py:40
 msgid "Vous être déjà inscrit à cette cours"
-msgstr ""
+msgstr "لقد قمت بالتسجيل بالفعل في هذه الدرس"

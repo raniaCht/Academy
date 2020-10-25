@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-24 18:43+0100\n"
+"POT-Creation-Date: 2020-10-25 20:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,14 @@ msgstr "ذكر"
 #: .\accounts\models.py:10
 msgid "Femme"
 msgstr "أنثى"
+
+#: .\accounts\models.py:19
+msgid "date de naissance"
+msgstr "تاريخ الازدياد"
+
+#: .\accounts\models.py:20
+msgid "genre"
+msgstr "جنس"
 
 #: .\accounts\templates\registration\logged_out.html:6
 msgid "Déconnecté!"
@@ -67,6 +75,11 @@ msgstr "انشاء حساب جديد"
 #: .\accounts\templates\registration\login.html:37
 msgid "Mot de passe perdu?"
 msgstr "كلمة المرور المفقودة؟"
+
+#: .\accounts\templates\registration\register.html:60
+#: .\accounts\templates\registration\register.html:74
+msgid "S'inscrire"
+msgstr "تسجيل"
 
 #: .\accounts\views.py:16
 msgid "Hello"

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from datetime import datetime
 import django.db.models.deletion
 from django.utils.safestring import mark_safe
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 GENRES = [
     ('HOMME', _('Homme')),
@@ -16,8 +16,8 @@ def image_upload(instance, filename):
 
 class Etudiant(models.Model):
     compte = models.OneToOneField(User, on_delete=models.CASCADE)
-    dateDeNais = models.DateField()
-    genre = models.CharField(max_length=10, choices=GENRES)
+    dateDeNais = models.DateField(_("date de naissance"))
+    genre = models.CharField(_("genre"),max_length=10, choices=GENRES)
     image = models.ImageField(upload_to=image_upload, default='default.png')
 
     def image_tag(self):

@@ -1,6 +1,7 @@
 {% load static %}
 {% load bootstrap4 %}
 {% bootstrap_css%}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +57,7 @@
                         <div class="col-12 col-lg-5">
                             <div class="contact-information wow fadeInUp" data-wow-delay="400ms">
                                 <div class="section-heading text-center">
-                                    <h3>Inscrit-Vous</h3>
+                                    <h3>{% trans "S'inscrire" %}</h3>
                                     <!-- <p class="mt-30">Lacinia, lacinia la cus non, fermen tum nisi. Donec et sollicitudin. Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim, et pulvinar mauris.</p> -->
                                 </div>
 
@@ -70,7 +71,7 @@
                                     {% csrf_token %}
                                     {% bootstrap_form userform %}
                                     {% bootstrap_form etudiantform %}
-                                    <button class="btn academy-btn mt-30" type="submit">Inscrit</button>
+                                    <button class="btn academy-btn mt-30" type="submit">{% trans "S'inscrire" %}</button>
                                 </form>
                             </div>
                         </div>
@@ -85,9 +86,6 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <!-- <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p> -->
             </div>
         </div>
     </div>

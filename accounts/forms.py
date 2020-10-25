@@ -2,6 +2,7 @@ from django.forms import ModelForm, DateInput, ChoiceField, Select, CharField, T
 from django.contrib.auth.forms import UserCreationForm
 from .models import Etudiant
 from django.contrib.auth.models import User
+from django.utils.translation import gettext as _
 
 
 class UserForm(UserCreationForm):
@@ -14,6 +15,7 @@ class EtudiantForm(ModelForm):
         model = Etudiant
         fields = ['genre', 'dateDeNais']
         widgets = {'dateDeNais': DateInput(attrs={'id': 'datepicker'}), 'genre' : Select(attrs={'id':'select-input'}) }
+        
 
 class UpdateUserForm(ModelForm):
     class Meta:

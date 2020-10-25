@@ -1,13 +1,13 @@
 from django.db import models
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 from accounts.models import Etudiant
 
 NIVEAUX = [
-    ('Prepremaire',_('Pre Primary')),
-    ('Premaire', _('Primary')),
-    ('Moyen', _('Middle')),
-    ('Lycee', _('Secondary')),
-    ('Universitaire', _('University'))
+    ('Prepremaire',_('pré primaire')),
+    ('Premaire', _('primaire')),
+    ('Moyen', _('moyen')),
+    ('Lycee', _('lycée')),
+    ('Universitaire', _('Université'))
 ]
 
 
@@ -41,9 +41,9 @@ class Matiere(models.Model):
 
  
 class Cours(models.Model):
-    niveau = models.ForeignKey(Niveau_scolaire, on_delete=models.CASCADE)
-    annee = models.ForeignKey(Annee, on_delete=models.CASCADE)
-    matiere = models.ForeignKey(Matiere, on_delete=models.CASCADE)
+    niveau = models.ForeignKey(Niveau_scolaire, on_delete=models.CASCADE,verbose_name=_("Niveau scolaire"))
+    annee = models.ForeignKey(Annee, on_delete=models.CASCADE,verbose_name=_('Année'))
+    matiere = models.ForeignKey(Matiere, on_delete=models.CASCADE,verbose_name=_('Matière'))
     prix = models.IntegerField()
     description = models.TextField(max_length=1000, default=' ')
 
