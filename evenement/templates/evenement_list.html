@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block body %}
 <!-- ##### Breadcumb Area Start ##### -->
 <div class="breadcumb-area bg-img" style="background-image: url(/static/img/bg-img/event.jpg);">
     <div class="bradcumbContent">
-        <h2>Nos Evenements</h2>
+        <h2>{% trans "Nos Événements" %}</h2>
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
@@ -16,8 +17,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <span>les</span>
-                    <h3>Evenements les plus populaires</h3>
+                    
                 </div>
             </div>
         </div>
@@ -30,10 +30,10 @@
                 <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
                     <div class="popular-course-content">
                         <h5>{{ evenement }}</h5>
-                        <p>La Formatteur : {{ evenement.formatteur }}</p>
-                        <p>Le lieu : {{ evenement.lieu }}</p>
-                        <p>La date et l'heure : {{ evenement.date_et_heure }}</p>
-                        <a href="{% url 'evenement:inscription_evenement' evenement.id %}" class="btn academy-btn btn-sm">Inscrire à l'évenement</a>
+                        <p>{% trans "Le Formateur" %} : {{ evenement.formatteur }}</p>
+                        <p>{% trans "Le lieu" %} : {{ evenement.lieu }}</p>
+                        <p>{% trans "La date et l'heure" %} : {{ evenement.date_et_heure }}</p>
+                        <a href="{% url 'evenement:inscription_evenement' evenement.id %}" class="btn academy-btn btn-sm">{% trans "Inscrire à l'événements" %}</a>
                     </div>
                     <!-- <div class="popular-course-content">{{ evenement.formatteur }}</div> -->
                 </div>
@@ -41,7 +41,7 @@
             {% endfor %}
             {% else %}
                 <div class="mx-auto wow fadeInUp" data-wow-delay="400ms">
-                    <h3 class="ilnya">Il n'y a pas des évènements</h3>
+                    <h3 class="ilnya">{% trans "Il n'y a pas des événements" %}</h3>
                 </div>
             {% endif %}
                 
@@ -57,7 +57,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">{% trans "Boîte de dialogue" %}</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -66,7 +66,7 @@
           <p>{{ evenement_erreur }}</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
@@ -75,63 +75,5 @@
 {% endif %}
 
 
-<!-- ##### Course Area Start ##### -->
-<div class="academy-courses-area section-padding-100-0">
-    <div class="container">
-        <div class="row">
-            <!-- Single Course Area -->
-            <div class="col-12 col-lg-4">
-                <div class="single-course-area d-flex align-items-center mb-100">
-                    <div class="course-icon">
-                        <i class="icon-id-card"></i>
-                    </div>
-                    <div class="course-content">
-                        <h4>Business School</h4>
-                        <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Course Area -->
-            <div class="col-12 col-lg-4">
-                <div class="single-course-area d-flex align-items-center mb-100">
-                    <div class="course-icon">
-                        <i class="icon-worldwide"></i>
-                    </div>
-                    <div class="course-content">
-                        <h4>Marketing</h4>
-                        <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Course Area -->
-            <div class="col-12 col-lg-4">
-                <div class="single-course-area d-flex align-items-center mb-100">
-                    <div class="course-icon">
-                        <i class="icon-map"></i>
-                    </div>
-                    <div class="course-content">
-                        <h4>Photography</h4>
-                        <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### Course Area End ##### -->
 
-<!-- ##### CTA Area Start ##### -->
-<div class="call-to-action-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="cta-content d-flex align-items-center justify-content-between flex-wrap">
-                    <h3>Voulez-vous rejoindre notre académie? Inscrivez-vous en ligne pour recevoir toutes les nouveautés!</h3>
-                    <a href="#" class="btn academy-btn">See More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### CTA Area End ##### -->
 {% endblock body %}

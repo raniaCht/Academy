@@ -38,6 +38,6 @@ def inscription_evenement(request, id):
         evenement_list = Evenement.objects.all()
         context = {
             'evenements' : evenement_list,
-            'evenement_erreur' : _('Vous être déjà inscrit à cet evenement')
+            'evenement_erreur' : _('Vous être déjà inscrit à cet événement')
         }
         return render(request, 'evenement_list.html', context)

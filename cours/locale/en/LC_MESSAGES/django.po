@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 20:19+0100\n"
+"POT-Creation-Date: 2020-11-01 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr "university"
 msgid "Niveau scolaire"
 msgstr "School level"
 
-#: .\cours\models.py:45 .\cours\templates\cours_detail.html:33
+#: .\cours\models.py:45 .\cours\templates\cours_detail.html:36
 msgid "Année"
 msgstr "year"
 
@@ -53,23 +53,23 @@ msgstr "matter"
 msgid "Info Sur Cours"
 msgstr "Course Info"
 
-#: .\cours\templates\cours_detail.html:27
+#: .\cours\templates\cours_detail.html:30
 msgid "Inscrire Au Cours"
 msgstr "Register on the course"
 
-#: .\cours\templates\cours_detail.html:31
+#: .\cours\templates\cours_detail.html:34
 msgid "à propos de cours"
 msgstr "about course"
 
-#: .\cours\templates\cours_detail.html:32
+#: .\cours\templates\cours_detail.html:35
 msgid "Niveau Scolaire"
 msgstr "School level"
 
-#: .\cours\templates\cours_detail.html:37
+#: .\cours\templates\cours_detail.html:40
 msgid "Plus sur le cours"
 msgstr "More on the lesson"
 
-#: .\cours\templates\cours_detail.html:41
+#: .\cours\templates\cours_detail.html:44
 msgid "Prix"
 msgstr "Price"
 

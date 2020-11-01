@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from .models import Cours
+from .models import Cours, Inscrit_cours
 from .filters import CoursFilter
 from accounts.models import Etudiant
 

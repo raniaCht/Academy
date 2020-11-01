@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 20:19+0100\n"
+"POT-Creation-Date: 2020-11-01 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: .\templates\admin\500.html:6 .\templates\admin\app_index.html:9
 #: .\templates\admin\auth\user\change_password.html:13
-#: .\templates\admin\base.html:65 .\templates\admin\change_form.html:18
+#: .\templates\admin\base.html:66 .\templates\admin\change_form.html:18
 #: .\templates\admin\change_list.html:31
 #: .\templates\admin\delete_confirmation.html:14
 #: .\templates\admin\delete_selected_confirmation.html:14
@@ -114,7 +114,7 @@ msgstr ""
 
 #: .\templates\admin\auth\user\change_password.html:17
 #: .\templates\admin\auth\user\change_password.html:55
-#: .\templates\admin\base.html:53 .\templates\base_login.html:50
+#: .\templates\admin\base.html:54 .\templates\base_login.html:50
 msgid "Change password"
 msgstr ""
 
@@ -139,15 +139,16 @@ msgstr ""
 msgid "Welcome,"
 msgstr ""
 
-#: .\templates\admin\base.html:44 .\templates\base_login.html:41
+#: .\templates\admin\base.html:44 .\templates\admin\base.html:45
+#: .\templates\base_login.html:41
 msgid "View site"
 msgstr ""
 
-#: .\templates\admin\base.html:49 .\templates\base_login.html:46
+#: .\templates\admin\base.html:50 .\templates\base_login.html:46
 msgid "Documentation"
 msgstr ""
 
-#: .\templates\admin\base.html:55 .\templates\base_login.html:52
+#: .\templates\admin\base.html:56 .\templates\base_login.html:52
 msgid "Log out"
 msgstr ""
 

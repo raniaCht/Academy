@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 20:19+0100\n"
+"POT-Creation-Date: 2020-11-01 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,94 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\formation\models.py:21
-msgid "Gold"
-msgstr ""
+msgid "Or"
+msgstr "Gold"
 
 #: .\formation\models.py:22
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
+
+#: .\formation\models.py:27
+msgid "Type de formation"
+msgstr "type of formation"
+
+#: .\formation\models.py:33 .\formation\templates\formation_detail.html:29
+msgid "Catégorie"
+msgstr "Category"
+
+#: .\formation\templates\formation_detail.html:8
+msgid "Info Sur Formation"
+msgstr "Formation infos"
+
+#: .\formation\templates\formation_detail.html:24
+msgid "Inscrire à la Formation"
+msgstr "Register for Formation"
+
+#: .\formation\templates\formation_detail.html:28
+msgid "à propos de formation"
+msgstr "about formation"
+
+#: .\formation\templates\formation_detail.html:30
+msgid "Type"
+msgstr "Type"
+
+#: .\formation\templates\formation_detail.html:31
+msgid "Niveau"
+msgstr "Level"
+
+#: .\formation\templates\formation_detail.html:35
+msgid "Plus sur la formation"
+msgstr "More on formation"
+
+#: .\formation\templates\formation_detail.html:36
+msgid "Date Début"
+msgstr "Start date"
+
+#: .\formation\templates\formation_detail.html:37
+msgid "Date Fin"
+msgstr "End date"
+
+#: .\formation\templates\formation_detail.html:38
+msgid "Durée"
+msgstr "Duration"
+
+#: .\formation\templates\formation_detail.html:38
+msgid "Heures"
+msgstr "Hours"
+
+#: .\formation\templates\formation_detail.html:39
+msgid "Prix"
+msgstr "Price"
+
+#: .\formation\templates\formation_list.html:10
+msgid "Nos Formations"
+msgstr "Our Formations"
+
+#: .\formation\templates\formation_list.html:31
+msgid "Chercher"
+msgstr "Search"
+
+#: .\formation\templates\formation_list.html:42
+msgid "Catégorie de la formation est"
+msgstr "Category of formation is"
+
+#: .\formation\templates\formation_list.html:43
+msgid "type de la formation est"
+msgstr "type of formation is"
+
+#: .\formation\templates\formation_list.html:44
+msgid "Plus de Détail"
+msgstr "More details"
 
 #: .\formation\views.py:44
 msgid "Vous être déjà inscrit à cette formation"
-msgstr ""
+msgstr "You have already registered for this formation"
+
+#~ msgid "OR"
+#~ msgstr "Gold"
+
+#~ msgid "NORMAL"
+#~ msgstr "Normal"
+
+#~ msgid "Boîte de dialogue"
+#~ msgstr "Dialog box"

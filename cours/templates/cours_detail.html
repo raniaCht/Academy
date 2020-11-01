@@ -9,15 +9,18 @@
         <h2>{% trans "Info Sur Cours" %}</h2>
     </div>
 </div>
-<!-- ##### Breadcumb Area End ##### -->
 
-<!-- ##### Top Popular Courses Area Start ##### -->
+
+
 <div class="top-popular-courses-area mt-50 section-padding-100-70">
     
 </div>
-<!-- ##### Top Popular Courses Area End ##### -->
 
-<!-- ##### Top Popular Courses Details Area Start ##### -->
+
+{% if cours_erreur %}
+  <div class="alert alert-primary" role="alert">{{ cours_erreur }} .</div>
+{% endif %} 
+
 <div class="popular-course-details-area wow fadeInUp" data-wow-delay="300ms">
     <div class="single-top-popular-course d-flex align-items-center flex-wrap">
         <div class="popular-course-content">
@@ -43,7 +46,6 @@
         </div>
     </div>
 </div>
-<!-- ##### Top Popular Courses Details Area End ##### -->
 
 
 

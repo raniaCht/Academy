@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 20:19+0100\n"
+"POT-Creation-Date: 2020-11-01 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: .\evenement\templates\evenement_list.html:9
+msgid "Nos Événements"
+msgstr "Our Events"
+
+#: .\evenement\templates\evenement_list.html:33
+msgid "Le Formateur"
+msgstr "The trainer"
+
+#: .\evenement\templates\evenement_list.html:34
+msgid "Le lieu"
+msgstr "The place"
+
+#: .\evenement\templates\evenement_list.html:35
+msgid "La date et l'heure"
+msgstr "Date and time"
+
+#: .\evenement\templates\evenement_list.html:36
+msgid "Inscrire à l'événements"
+msgstr "Register to the event"
+
+#: .\evenement\templates\evenement_list.html:44
+msgid "Il n'y a pas des événements"
+msgstr "There are no events"
+
+#: .\evenement\templates\evenement_list.html:60
+msgid "Boîte de dialogue"
+msgstr "Dialog box"
+
 #: .\evenement\views.py:41
-msgid "Vous être déjà inscrit à cet evenement"
-msgstr ""
+msgid "Vous être déjà inscrit à cet événement"
+msgstr "You have already registered for this event"

@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 from accounts.models import Etudiant
 
 class Categorie(models.Model):
@@ -18,19 +18,19 @@ class Niveau(models.Model):
 
 
 TYPES_FORMATION = [
-    ('GOLD', _('Gold')),
+    ('OR', _('Or')),
     ('NORMAL', _('Normal')),
 ]
 
 class Formation(models.Model):
     nom = models.CharField(max_length=20)
-    formation_type = models.CharField(max_length=20, choices=TYPES_FORMATION)
+    formation_type = models.CharField(max_length=20, choices=TYPES_FORMATION,verbose_name=_("Type de formation"))
     description = models.TextField(max_length=1000, default=' ')
     prix = models.IntegerField()
     date_deb = models.DateField()
     date_fin = models.DateField()
     duree_en_h = models.IntegerField()
-    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE)
+    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE, verbose_name=_("Catégorie"))
     niveau = models.ForeignKey(Niveau, on_delete=models.CASCADE)
     
 

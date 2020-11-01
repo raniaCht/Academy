@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 20:19+0100\n"
+"POT-Creation-Date: 2020-11-01 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr "جامعي"
 msgid "Niveau scolaire"
 msgstr "المستوى الدراسي"
 
-#: .\cours\models.py:45 .\cours\templates\cours_detail.html:33
+#: .\cours\models.py:45 .\cours\templates\cours_detail.html:36
 msgid "Année"
 msgstr "سنة"
 
@@ -54,23 +54,23 @@ msgstr "المادة"
 msgid "Info Sur Cours"
 msgstr "معلومات حول الدرس"
 
-#: .\cours\templates\cours_detail.html:27
+#: .\cours\templates\cours_detail.html:30
 msgid "Inscrire Au Cours"
 msgstr "التسجيل في الدرس"
 
-#: .\cours\templates\cours_detail.html:31
+#: .\cours\templates\cours_detail.html:34
 msgid "à propos de cours"
 msgstr "حول الدرس"
 
-#: .\cours\templates\cours_detail.html:32
+#: .\cours\templates\cours_detail.html:35
 msgid "Niveau Scolaire"
 msgstr "المستوى الدراسي"
 
-#: .\cours\templates\cours_detail.html:37
+#: .\cours\templates\cours_detail.html:40
 msgid "Plus sur le cours"
 msgstr "المزيد عن الدرس"
 
-#: .\cours\templates\cours_detail.html:41
+#: .\cours\templates\cours_detail.html:44
 msgid "Prix"
 msgstr "السعر"
 

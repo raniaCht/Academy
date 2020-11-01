@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
 
 {% block body %}
 <!-- ##### Breadcumb Area Start ##### -->
 <div class="breadcumb-area bg-img" style="background-image: url(/static/img/bg-img/student.jpg);">
     <div class="bradcumbContent">
-        <h2>Nos Formations</h2>
+        <h2>{% trans "Nos Formations" %}</h2>
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
@@ -15,18 +17,18 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                <!-- <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
                     <span>les</span>
                     <h3>Formations les plus populaires</h3>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="col-6 col-lg-4 mb-30 exemple_filtre mx-auto">
             <div data-wow-delay="400ms" id="exemple_filtre">
                 <form method="GET">
-                    {{ myfilter.form.formation_type }}
-                    {{ myfilter.form.categorie }}
-                    <input type="submit" name="" value="Chercher" class="bouton_filtre mx-auto">    
+                    {{ myfilter.form.formation_type|as_crispy_field }}
+                    {{ myfilter.form.categorie|as_crispy_field }}
+                    <input type="submit" name="" value="{% trans 'Chercher' %}" class="bouton_filtre mx-auto">    
                 </form>
         </div>
         </div>
@@ -37,9 +39,9 @@
                 <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
                     <div class="popular-course-content">
                         <h5>{{ formation }}</h5>
-                        <p>Catégorie de la formation est : {{ formation.categorie }}</p>
-                        <p>type de la formation est : {{ formation.formation_type }}</p>
-                        <a href="{% url 'formation:formation_detail' formation.id %}" class="btn academy-btn btn-sm">Plus de Détail</a>
+                        <p>{% trans "Catégorie de la formation est" %} : {{ formation.categorie }}</p>
+                        <p>{% trans "type de la formation est" %} : {{ formation.formation_type }}</p>
+                        <a href="{% url 'formation:formation_detail' formation.id %}" class="btn academy-btn btn-sm">{% trans "Plus de Détail" %}</a>
                     </div>
                     <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-1.jpg);"></div>
                 </div>
