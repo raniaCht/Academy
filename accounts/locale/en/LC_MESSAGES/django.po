@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 18:58+0100\n"
+"POT-Creation-Date: 2020-11-02 19:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,6 +74,52 @@ msgstr "Create new account"
 #: .\accounts\templates\registration\login.html:37
 msgid "Mot de passe perdu?"
 msgstr "Forgot your password?"
+
+#: .\accounts\templates\registration\password_reset_complete.html:6
+msgid "Le mot de passe a été changé!"
+msgstr "The password has been changed!"
+
+#: .\accounts\templates\registration\password_reset_complete.html:8
+msgid "vous reconnectez?"
+msgstr "log in again?"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:8
+msgid "Veuillez saisir (et confirmer) votre nouveau mot de passe."
+msgstr "Please enter (and confirm) your new password."
+
+#: .\accounts\templates\registration\password_reset_confirm.html:12
+msgid "Nouveau mot de passe:"
+msgstr "New password:"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:17
+msgid "Confirmez le mot de passe:"
+msgstr "Confirm password:"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:21
+msgid "Changer mon mot de passe"
+msgstr "Change my password"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:25
+msgid "La réinitialisation du mot de passe a échoué"
+msgstr "Password reset failed"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:26
+msgid ""
+"Le lien de réinitialisation du mot de passe n'était pas valide, probablement "
+"parce qu'il a déjà été utilisé. Veuillez demander une nouvelle "
+"réinitialisation de mot de passe."
+msgstr "The password reset link was invalid, possibly because it has already been used. Please request a new password reset."
+
+#: .\accounts\templates\registration\password_reset_done.html:6
+msgid ""
+"Nous vous avons envoyé par e-mail des instructions pour définir votre mot de "
+"passe. S'ils ne sont pas arrivés dans quelques minutes, vérifiez votre "
+"dossier spam."
+msgstr "We've emailed you instructions for setting your password. If they haven't arrived in a few minutes, check your spam folder."
+
+#: .\accounts\templates\registration\password_reset_form.html:12
+msgid "Réinitialiser le mot de passe"
+msgstr "Reset password"
 
 #: .\accounts\templates\registration\register.html:60
 #: .\accounts\templates\registration\register.html:74

@@ -8,6 +8,6 @@ translator.register(Categorie, CategorieTranslationOptions)
 
 
 class FormationTranslationOptions(TranslationOptions):
-    fields = ('nom', 'description',)
+    fields = ('nom', 'description')
 
 translator.register(Formation, FormationTranslationOptions)

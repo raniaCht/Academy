@@ -27,7 +27,7 @@
         <div class="popular-course-content">
             <h6>{% trans "à propos de formation" %}</h6>
             <span class="chettb"><div class='rania'>{% trans "Catégorie" %}</div>   |  {{ formation.categorie }}</span>
-            <span class="chettb"><div class='rania'>{% trans "Type" %}</div>   |  {{ formation.formation_type }}</span>
+            <span class="chettb"><div class='rania'>{% trans "Type" %}</div>   |  {{ formation.get_formation_type_display }}</span>
             <span class="chettb"><div class='rania'>{% trans "Niveau" %}</div>   |  {{ formation.niveau }}</span>
         </div>
         

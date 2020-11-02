@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 18:58+0100\n"
+"POT-Creation-Date: 2020-11-02 19:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,6 +75,52 @@ msgstr "انشاء حساب جديد"
 #: .\accounts\templates\registration\login.html:37
 msgid "Mot de passe perdu?"
 msgstr "كلمة المرور المفقودة؟"
+
+#: .\accounts\templates\registration\password_reset_complete.html:6
+msgid "Le mot de passe a été changé!"
+msgstr "تم تغيير كلمة السر!"
+
+#: .\accounts\templates\registration\password_reset_complete.html:8
+msgid "vous reconnectez?"
+msgstr "تسجيل الدخول مرة أخرى؟"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:8
+msgid "Veuillez saisir (et confirmer) votre nouveau mot de passe."
+msgstr "الرجاء إدخال (وتأكيد) كلمة المرور الجديدة الخاصة بك."
+
+#: .\accounts\templates\registration\password_reset_confirm.html:12
+msgid "Nouveau mot de passe:"
+msgstr "كلمة سر جديدة:"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:17
+msgid "Confirmez le mot de passe:"
+msgstr "تأكيد كلمة المرور:"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:21
+msgid "Changer mon mot de passe"
+msgstr "تغيير كلمة المرور الخاصة بي"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:25
+msgid "La réinitialisation du mot de passe a échoué"
+msgstr "فشل إعادة تعيين كلمة المرور"
+
+#: .\accounts\templates\registration\password_reset_confirm.html:26
+msgid ""
+"Le lien de réinitialisation du mot de passe n'était pas valide, probablement "
+"parce qu'il a déjà été utilisé. Veuillez demander une nouvelle "
+"réinitialisation de mot de passe."
+msgstr "رابط إعادة تعيين كلمة المرور غير صالح ، ربما لأنه قد تم استخدامه بالفعل. يرجى طلب إعادة تعيين كلمة المرور الجديدة."
+
+#: .\accounts\templates\registration\password_reset_done.html:6
+msgid ""
+"Nous vous avons envoyé par e-mail des instructions pour définir votre mot de "
+"passe. S'ils ne sont pas arrivés dans quelques minutes, vérifiez votre "
+"dossier spam."
+msgstr "لقد أرسلنا إليك عبر البريد الإلكتروني تعليمات حول تعيين كلمة المرور الخاصة بك. إذا لم يصلوا خلال بضع دقائق ، فتحقق من مجلد الرسائل غير المرغوب فيها."
+
+#: .\accounts\templates\registration\password_reset_form.html:12
+msgid "Réinitialiser le mot de passe"
+msgstr "إعادة تعيين كلمة المرور"
 
 #: .\accounts\templates\registration\register.html:60
 #: .\accounts\templates\registration\register.html:74

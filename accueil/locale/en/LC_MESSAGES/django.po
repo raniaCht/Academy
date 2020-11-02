@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 18:58+0100\n"
+"POT-Creation-Date: 2020-11-02 19:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,13 +101,13 @@ msgstr "Human Development"
 msgid "Secrétariat et conseils administratifs"
 msgstr "Secretarial work and management consulting"
 
-#: .\accueil\templates\accueil.html:211
+#: .\accueil\templates\accueil.html:211 .\accueil\templates\avis.html:31
 msgid "nos témoignages"
 msgstr "our testimonials"
 
-#: .\accueil\templates\accueil.html:212
+#: .\accueil\templates\accueil.html:212 .\accueil\templates\avis.html:32
 msgid "Voyez ce que nos clients satisfaits disent de nous"
-msgstr "Do you want to enrole at our Academy? Get in touch!"
+msgstr "See what our happy customers are saying about us"
 
 #: .\accueil\templates\accueil.html:237
 msgid "Il n'y a pas commentaires"
@@ -116,3 +116,11 @@ msgstr "there are no comments"
 #: .\accueil\templates\accueil.html:248
 msgid "Voir plus"
 msgstr "See More"
+
+#: .\accueil\templates\avis.html:10
+msgid "Nos Témoignages"
+msgstr "our testimonials"
+
+#: .\accueil\templates\avis.html:21
+msgid "Avis de nos chèrs clients sur nous"
+msgstr "Reviews of our dear customers about us"

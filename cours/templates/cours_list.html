@@ -43,7 +43,7 @@
                 <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
                     <div class="popular-course-content">
                         <h5>{{ cour.matiere.nom }}</h5>
-                        <p>{% trans "Niveau scolaire est" %} : {{ cour.niveau.nom }}</p>
+                        <p>{% trans "Niveau scolaire est" %} : {{ cour.niveau.get_nom_display }}</p>
                         <p>{% trans "Année est" %} : {{ cour.annee.nom }} </p>
                         <a href="{% url 'cours:cours_detail' cour.id %}" class="btn academy-btn btn-sm">{% trans "Plus de Détail" %}</a>
                     </div>

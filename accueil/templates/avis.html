@@ -1,23 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
+
 {% block body %}
 
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
+   
+    <div class="breadcumb-area bg-img" style="background-image: url(/static/img/bg-img/temoignage.jpg);">
         <div class="bradcumbContent">
-            <h2>Nos Témoignages</h2>
+            <h2>{% trans "Nos Témoignages" %}</h2>
         </div>
     </div>
-    <!-- ##### Breadcumb Area End ##### -->
+    
 
-    <!-- ##### Top Popular Courses Area Start ##### -->
     <div class="top-popular-courses-area mt-50 section-padding-100-70">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <span>les</span>
-                        <h3>Avis de nos chèrs clients sur nous</h3>
+                        
+                        <h3>{% trans "Avis de nos chèrs clients sur nous" %}</h3>
                     </div>
                 </div>
             </div>
@@ -27,26 +28,24 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="section-heading text-center mx-auto white wow fadeInUp" data-wow-delay="300ms">
-                                <span>nos témoignages</span>
-                                <h3>Voyez ce que nos clients satisfaits disent de nous</h3>
+                                <span>{% trans "nos témoignages" %}</span>
+                                <h3>{% trans "Voyez ce que nos clients satisfaits disent de nous" %}</h3>
                             </div>
                         </div>
                     </div>
                     
-                        <!-- Single Testimonials Area -->
                         {% if commentaires %}
                         <div class="row ">
                             {% for commentaire in commentaires %}
                                 <div class="col-12 col-md-4">
                                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms">
                                         <div class="testimonial-thumb">
-                                            <img src="{{ commentaire.propirtaire.image.url }}" style="width:50px;height:50px;" alt="">
+                                            <img src="{{ commentaire.proprietaire.image.url }}" style="width:50px;height:50px;" alt="">
                                         </div>
                                         <div class="testimonial-content">
-                                            <!-- <h5>Great teachers</h5> -->
                                             <br>
                                             <p>{{ commentaire.commentaire }}</p>
-                                            <h6><span>{{ commentaire.proprietaire.nom }} {{ commentaire.proprietaire.prenom }}</span></h6>
+                                            <h6><span>{{ commentaire.proprietaire.compte.first_name }}, {{ commentaire.proprietaire.compte.last_name }}</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -58,7 +57,6 @@
             
         </div>
     </div>
-    <!-- ##### Top Popular Courses Area End ##### -->
 
     
 
