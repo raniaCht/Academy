@@ -1,5 +1,6 @@
 {% extends 'base_profil.html' %} 
 {% load static %}
+{% load i18n %}
 {% load bootstrap4 %}
 
 {% block body %}
@@ -46,44 +47,44 @@
           <li class="nav-item  ">
             <a class="nav-link" href="{% url 'accounts:profil' %}">
               <i class="material-icons">dashboard</i>
-              <p>Accueil</p>
+              <p>{% trans "Accueil" %}</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="{% url 'accounts:profil_edit' %}">
               <i class="material-icons">person</i>
-              <p>Mon Profil</p>
+              <p>{% trans "Mon Profil" %}</p>
             </a>
           </li>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="{% url 'accounts:mes_cours' %}">
             <i class="material-icons">library_books</i>
-            <p>Mes Cours</p>
+            <p>{% trans "Mes Cours" %}</p>
           </a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="{% url 'accounts:mes_formations' %}">
               <i class="material-icons">content_paste</i>
-              <p>Mes Formations</p>
+              <p>{% trans "Mes Formations" %}</p>
             </a>
       </li>
       <li class="nav-item ">
           <a class="nav-link" href="{% url 'accounts:mes_evenements' %}">
               <i class="material-icons">bubble_chart</i>
-              <p>Mes Evenements</p>
+              <p>{% trans "Mes Événements" %}</p>
             </a>
       </li>
         <li class="nav-item active">
             <a class="nav-link" href="{% url 'accounts:mon_avis' %}">
               <i class="material-icons">comment</i>
-              <p>Mon Avis</p>
+              <p>{% trans "Mon Avis" %}</p>
             </a>
           </li>
         <li class="nav-item ">
             <a class="nav-link" href="{% url 'logout' %}">
               <i class="material-icons">logout</i>
-              <p>Déconnexion</p>
+              <p>{% trans "Déconnexion" %}</p>
             </a>
         </li>
         </ul>
@@ -94,10 +95,10 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="{% url 'accounts:mon_avis' %}">Mon Avis</a>
+            <a class="navbar-brand" href="{% url 'accounts:mon_avis' %}">{% trans "Mon Avis" %}</a>
           </div>
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="{% url 'accueil:accueil' %}">Future Pioneers Academy</a>
+            <a class="navbar-brand" href="{% url 'accueil:accueil' %}">{% trans "Academie Pionniers Future" %}</a>
           </div>
 
           <div class="navbar-wrapper">
@@ -162,7 +163,7 @@
                   <input type="hidden" name="nbrEtoiles" id="nbrEtoiles" value="">
                   <textarea type="text" name="commentaire" id="champsCom"></textarea>
                   <br>
-                  <input type="submit" class="btn btn-primary btn-round" value="Publier">
+                  <input type="submit" class="btn btn-primary btn-round" value="{% trans 'Publier' %}">
                 </form>  
                   
                 </div>

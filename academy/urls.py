@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    
+        
 ]
 
 urlpatterns += i18n_patterns(

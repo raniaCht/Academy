@@ -13,3 +13,7 @@ def accueil(request):
 def avis(request):
     commentaires = Commentaire.objects.filter(acceptable = True)
     return render(request, 'avis.html', {'commentaires':commentaires})
+
+
+def about(request):
+    return render(request, 'about.html', {})

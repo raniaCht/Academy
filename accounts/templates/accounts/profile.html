@@ -1,5 +1,6 @@
 {% extends "base_profil.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block body %}
 <div class="sidebar" data-color="azure" data-background-color="black" data-image="{% static 'assets/img/sidebar-2.jpg' %}">
@@ -12,43 +13,43 @@
     <li class="nav-item active">
       <a class="nav-link" href="{% url 'accounts:profil' %}">
         <i class="material-icons">dashboard</i>
-        <p>Accueil</p>
+        <p>{% trans "Accueil" %}</p>
       </a>
     </li>
     <li class="nav-item ">
       <a class="nav-link" href="{% url 'accounts:profil_edit' %}">
         <i class="material-icons">person</i>
-        <p>Mon Profil</p>
+        <p>{% trans "Mon Profil" %}</p>
       </a>
     </li>
     <li class="nav-item ">
       <a class="nav-link" href="{% url 'accounts:mes_cours' %}">
         <i class="material-icons">library_books</i>
-        <p>Mes Cours</p>
+        <p>{% trans "Mes Cours" %}</p>
       </a>
     </li>
     <li class="nav-item ">
       <a class="nav-link" href="{% url 'accounts:mes_formations' %}">
           <i class="material-icons">content_paste</i>
-          <p>Mes Formations</p>
+          <p>{% trans "Mes Formations" %}</p>
         </a>
   </li>
   <li class="nav-item ">
       <a class="nav-link" href="{% url 'accounts:mes_evenements' %}">
           <i class="material-icons">bubble_chart</i>
-          <p>Mes Evenements</p>
+          <p>{% trans "Mes Événements" %}</p>
         </a>
   </li>
   <li class="nav-item ">
     <a class="nav-link" href="{% url 'accounts:mon_avis' %}">
       <i class="material-icons">comment</i>
-      <p>Mon Avis</p>
+      <p>{% trans "Mon Avis" %}</p>
     </a>
   </li>
     <li class="nav-item ">
         <a class="nav-link" href="{% url 'logout' %}">
           <i class="material-icons">logout</i>
-          <p>Déconnexion</p>
+          <p>{% trans "Déconnexion" %}</p>
         </a>
     </li>
   </ul>
@@ -58,10 +59,10 @@
   <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
     <div class="container-fluid">
       <div class="navbar-wrapper">
-        <a class="navbar-brand" href="{% url 'accounts:profil' %}">Accueil</a>
+        <a class="navbar-brand" href="{% url 'accounts:profil' %}">{% trans "Accueil" %}</a>
       </div>
       <div class="navbar-wrapper">
-            <a class="navbar-brand" href="{% url 'accueil:accueil' %}">Future Pioneers Academy</a>
+            <a class="navbar-brand" href="{% url 'accueil:accueil' %}">{% trans "Academie Pionniers Future" %}</a>
           </div>
 
           <div class="navbar-wrapper">
@@ -76,8 +77,8 @@
       <div class="container-fluid">
         <div class="card card-plain">
           <div class="card-header card-header-primary">
-            <h4 class="card-title">Bienvenue, {{ etudiant.nom }} {{ etudiant.prenom }}</h4>
-            <p class="card-category">Vous êtes un cher membre chez nous, vous pouvez consulté vos formations, vos cours, inscrire à nouvelle formation ou cours 
+            <h4 class="card-title">{% trans "Bienvenue" %}, {{ etudiant.nom }} {{ etudiant.prenom }}</h4>
+            <p class="card-category">{% trans "Vous êtes un membre cher avec nous, vous pouvez consulter les cours de soutien auxquels vous assistez, les formations auxquels vous avez assisté, et vous inscrire à de nouveaux cours ou formations" %} 
             </p>
           </div>
           

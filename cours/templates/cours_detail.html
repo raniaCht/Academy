@@ -32,7 +32,7 @@
         <div class="popular-course-thumb detail-w-m-f">
         <div class="popular-course-content">
             <h6>{% trans "à propos de cours" %} </h6>
-            <span class="chettb"><div class='rania'>{% trans "Niveau Scolaire" %}</div>   |  {{ cours.niveau.nom }}</span>
+            <span class="chettb"><div class='rania'>{% trans "Niveau Scolaire" %}</div>   |  {{ cours.niveau.get_nom_display }}</span>
             <span class="chettb"><div class='rania'>{% trans "Année" %}</div>   |  {{ cours.annee.nom }}</span>
         </div>
         

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 19:29+0100\n"
+"POT-Creation-Date: 2020-11-04 15:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,176 @@ msgstr "تاريخ الازدياد"
 #: .\accounts\models.py:20
 msgid "genre"
 msgstr "جنس"
+
+#: .\accounts\templates\accounts\mes_cours.html:22
+#: .\accounts\templates\accounts\mes_evenements.html:22
+#: .\accounts\templates\accounts\mes_formations.html:22
+#: .\accounts\templates\accounts\mon_avis.html:50
+#: .\accounts\templates\accounts\profile.html:16
+#: .\accounts\templates\accounts\profile.html:62
+#: .\accounts\templates\accounts\user.html:18
+msgid "Accueil"
+msgstr "رئيسية"
+
+#: .\accounts\templates\accounts\mes_cours.html:28
+#: .\accounts\templates\accounts\mes_evenements.html:28
+#: .\accounts\templates\accounts\mes_formations.html:28
+#: .\accounts\templates\accounts\mon_avis.html:56
+#: .\accounts\templates\accounts\profile.html:22
+#: .\accounts\templates\accounts\user.html:24
+msgid "Mon Profil"
+msgstr "الصفحة الشخصية"
+
+#: .\accounts\templates\accounts\mes_cours.html:34
+#: .\accounts\templates\accounts\mes_cours.html:75
+#: .\accounts\templates\accounts\mes_cours.html:95
+#: .\accounts\templates\accounts\mes_evenements.html:34
+#: .\accounts\templates\accounts\mes_formations.html:34
+#: .\accounts\templates\accounts\mon_avis.html:63
+#: .\accounts\templates\accounts\profile.html:28
+#: .\accounts\templates\accounts\user.html:31
+msgid "Mes Cours"
+msgstr "دروسي"
+
+#: .\accounts\templates\accounts\mes_cours.html:40
+#: .\accounts\templates\accounts\mes_evenements.html:40
+#: .\accounts\templates\accounts\mes_formations.html:40
+#: .\accounts\templates\accounts\mes_formations.html:75
+#: .\accounts\templates\accounts\mes_formations.html:95
+#: .\accounts\templates\accounts\mon_avis.html:69
+#: .\accounts\templates\accounts\profile.html:34
+#: .\accounts\templates\accounts\user.html:37
+msgid "Mes Formations"
+msgstr "دوراتي"
+
+#: .\accounts\templates\accounts\mes_cours.html:46
+#: .\accounts\templates\accounts\mes_evenements.html:46
+#: .\accounts\templates\accounts\mes_evenements.html:75
+#: .\accounts\templates\accounts\mes_evenements.html:95
+#: .\accounts\templates\accounts\mes_formations.html:46
+#: .\accounts\templates\accounts\mon_avis.html:75
+#: .\accounts\templates\accounts\profile.html:40
+#: .\accounts\templates\accounts\user.html:43
+msgid "Mes Événements"
+msgstr "أحداثي"
+
+#: .\accounts\templates\accounts\mes_cours.html:52
+#: .\accounts\templates\accounts\mes_evenements.html:52
+#: .\accounts\templates\accounts\mes_formations.html:52
+#: .\accounts\templates\accounts\mon_avis.html:81
+#: .\accounts\templates\accounts\mon_avis.html:98
+#: .\accounts\templates\accounts\profile.html:46
+#: .\accounts\templates\accounts\user.html:49
+msgid "Mon Avis"
+msgstr "رأيي"
+
+#: .\accounts\templates\accounts\mes_cours.html:58
+#: .\accounts\templates\accounts\mes_evenements.html:58
+#: .\accounts\templates\accounts\mes_formations.html:58
+#: .\accounts\templates\accounts\mon_avis.html:87
+#: .\accounts\templates\accounts\profile.html:52
+#: .\accounts\templates\accounts\user.html:55
+msgid "Déconnexion"
+msgstr "تسجيل الخروج"
+
+#: .\accounts\templates\accounts\mes_cours.html:78
+#: .\accounts\templates\accounts\mes_evenements.html:78
+#: .\accounts\templates\accounts\mes_formations.html:78
+#: .\accounts\templates\accounts\mon_avis.html:101
+#: .\accounts\templates\accounts\profile.html:65
+#: .\accounts\templates\accounts\user.html:69
+msgid "Academie Pionniers Future"
+msgstr "أكاديمية رواد المستقبل"
+
+#: .\accounts\templates\accounts\mes_cours.html:108
+msgid "Matière"
+msgstr "المادة"
+
+#: .\accounts\templates\accounts\mes_cours.html:111
+msgid "Niveau Scolaire"
+msgstr "المستوى الدراسي"
+
+#: .\accounts\templates\accounts\mes_cours.html:114
+msgid "Année"
+msgstr "السنة"
+
+#: .\accounts\templates\accounts\mes_cours.html:117
+#: .\accounts\templates\accounts\mes_formations.html:120
+msgid "Prix"
+msgstr "السعر"
+
+#: .\accounts\templates\accounts\mes_cours.html:145
+msgid "Vous n'etes inscrit à aucun cours"
+msgstr "أنت غير مسجل في أي درس"
+
+#: .\accounts\templates\accounts\mes_evenements.html:108
+msgid "Nom d'événements"
+msgstr "اسم الحدث"
+
+#: .\accounts\templates\accounts\mes_evenements.html:111
+msgid "Formatteur"
+msgstr "المدرب"
+
+#: .\accounts\templates\accounts\mes_evenements.html:114
+msgid "lieu"
+msgstr "المكان"
+
+#: .\accounts\templates\accounts\mes_evenements.html:117
+msgid "Date et l'heure"
+msgstr "التاريخ و الوقت"
+
+#: .\accounts\templates\accounts\mes_evenements.html:145
+msgid "Vous n'etes participé à aucun événements"
+msgstr "لم تشارك في أي حدث"
+
+#: .\accounts\templates\accounts\mes_formations.html:108
+msgid "Nom de formation"
+msgstr "اسم الدورة"
+
+#: .\accounts\templates\accounts\mes_formations.html:111
+msgid "Catégorie"
+msgstr "الفئة"
+
+#: .\accounts\templates\accounts\mes_formations.html:114
+msgid "Type"
+msgstr "النوع"
+
+#: .\accounts\templates\accounts\mes_formations.html:117
+msgid "Niveau"
+msgstr "المستوى"
+
+#: .\accounts\templates\accounts\mes_formations.html:151
+msgid "Vous n'etes inscrit à aucune formation"
+msgstr "أنت غير مسجل في أي دورة"
+
+#: .\accounts\templates\accounts\mon_avis.html:166
+msgid "Publier"
+msgstr "نشر"
+
+#: .\accounts\templates\accounts\profile.html:80
+msgid "Bienvenue"
+msgstr "مرحبا"
+
+#: .\accounts\templates\accounts\profile.html:81
+msgid ""
+"Vous êtes un membre cher avec nous, vous pouvez consulter les cours de "
+"soutien auxquels vous assistez, les formations auxquels vous avez assisté, "
+"et vous inscrire à de nouveaux cours ou formations"
+msgstr ""
+"أنت عضو عزيز علينا ، يمكنك مشاهدة دروس الدعم التي تحضرها والدورات التي "
+"حضرتها والتسجيل في دروس أو دورات جديدة"
+
+#: .\accounts\templates\accounts\user.html:66
+msgid "Mon profil"
+msgstr "الصفحة الشخصية"
+
+#: .\accounts\templates\accounts\user.html:86
+msgid "Editer le profil"
+msgstr "تعديل الملف الشخصي"
+
+#: .\accounts\templates\accounts\user.html:105
+msgid "Enregistrer"
+msgstr "حفظ"
 
 #: .\accounts\templates\registration\logged_out.html:6
 msgid "Déconnecté!"
@@ -109,14 +279,18 @@ msgid ""
 "Le lien de réinitialisation du mot de passe n'était pas valide, probablement "
 "parce qu'il a déjà été utilisé. Veuillez demander une nouvelle "
 "réinitialisation de mot de passe."
-msgstr "رابط إعادة تعيين كلمة المرور غير صالح ، ربما لأنه قد تم استخدامه بالفعل. يرجى طلب إعادة تعيين كلمة المرور الجديدة."
+msgstr ""
+"رابط إعادة تعيين كلمة المرور غير صالح ، ربما لأنه قد تم استخدامه بالفعل. "
+"يرجى طلب إعادة تعيين كلمة المرور الجديدة."
 
 #: .\accounts\templates\registration\password_reset_done.html:6
 msgid ""
 "Nous vous avons envoyé par e-mail des instructions pour définir votre mot de "
 "passe. S'ils ne sont pas arrivés dans quelques minutes, vérifiez votre "
 "dossier spam."
-msgstr "لقد أرسلنا إليك عبر البريد الإلكتروني تعليمات حول تعيين كلمة المرور الخاصة بك. إذا لم يصلوا خلال بضع دقائق ، فتحقق من مجلد الرسائل غير المرغوب فيها."
+msgstr ""
+"لقد أرسلنا إليك عبر البريد الإلكتروني تعليمات حول تعيين كلمة المرور الخاصة "
+"بك. إذا لم يصلوا خلال بضع دقائق ، فتحقق من مجلد الرسائل غير المرغوب فيها."
 
 #: .\accounts\templates\registration\password_reset_form.html:12
 msgid "Réinitialiser le mot de passe"
@@ -127,6 +301,3 @@ msgstr "إعادة تعيين كلمة المرور"
 msgid "S'inscrire"
 msgstr "تسجيل"
 
-#: .\accounts\views.py:16
-msgid "Hello"
-msgstr ""
