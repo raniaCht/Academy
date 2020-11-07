@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 15:00+0100\n"
+"POT-Creation-Date: 2020-11-07 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -443,6 +443,10 @@ msgstr "صور الدورات"
 #: .\templates\base.html:157
 msgid "Galerie des èvènements"
 msgstr "صور الأحداث"
+
+#: .\templates\base.html:161
+msgid "À propos de nous"
+msgstr "في ما يخصنا"
 
 #: .\templates\base.html:163
 msgid "Contact"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 15:00+0100\n"
+"POT-Creation-Date: 2020-11-07 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accueil\templates\about.html:10
+msgid "À propos de nous"
+msgstr "About us"
+
+#: .\accueil\templates\about.html:18
+msgid "Notre slogan"
+msgstr "Our slogan"
+
+#: .\accueil\templates\about.html:19
+msgid "Notre créativité au travail est notre voie vers la qualité"
+msgstr "Our creativity at work is our path to quality"
+
+#: .\accueil\templates\about.html:26
+msgid ""
+"Academie Pionniers future propose des formations, des cours de soutien et "
+"des événements intéressants éducatives qui permet aux étudiants d'apprendre "
+"à leur propre rythme, dans et hors de la salle de classe. Les sujets divers "
+"et variés. Les mathématiques et des sciences sont déjà disponibles. Le "
+"programme éducatif s'étend de la maternelle à l'université, et les devoirs "
+"que nous proposons guident les étudiants en fonction de leurs besoins, à "
+"l'aide d'algorithmes modernes, capables d'identifier les forces et les "
+"faiblesses individuelles."
+msgstr "Future Pioneers Academy offers training, support courses and interesting educational events that allow students to learn at their own pace, in and out of the classroom. Various and varied subjects. Mathematics and science are already available. The educational program runs from kindergarten to university, and the homework we offer guides students according to their needs, using modern algorithms, able to identify individual strengths and weaknesses."
+
+#: .\accueil\templates\about.html:31
+msgid ""
+"Nous travaillons dur pour faire de Future Pioneers Academy une école privée "
+"prospère. Nous sommes une équipe de personnes différentes animées par la "
+"même volonté de donner à chacun accès à une éducation de qualité. Nous "
+"sommes des enseignants, des formateurs et des baby-sitters compétants pour "
+"vous ou votre enfants."
+msgstr "We are working hard to make Future Pioneers Academy a successful private school. We are a team of different people driven by the same desire to give everyone access to quality education. We are competent teachers, trainers and babysitters for you or your children."
+
+#: .\accueil\templates\about.html:39
+msgid "Créateur de l'Academie Pionniers Future"
+msgstr "Founder of the Future Pioneer Academy"
 
 #: .\accueil\templates\accueil.html:17
 msgid "académie des pionnier future"

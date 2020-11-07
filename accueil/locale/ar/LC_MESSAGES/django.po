@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 15:00+0100\n"
+"POT-Creation-Date: 2020-11-07 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\accueil\templates\about.html:10
+msgid "À propos de nous"
+msgstr "في ما يخصنا"
+
+#: .\accueil\templates\about.html:18
+msgid "Notre slogan"
+msgstr "شعارنا"
+
+#: .\accueil\templates\about.html:19
+msgid "Notre créativité au travail est notre voie vers la qualité"
+msgstr "إبداعنا في العمل هو طريقنا إلى الجودة"
+
+#: .\accueil\templates\about.html:26
+msgid ""
+"Academie Pionniers future propose des formations, des cours de soutien et "
+"des événements intéressants éducatives qui permet aux étudiants d'apprendre "
+"à leur propre rythme, dans et hors de la salle de classe. Les sujets divers "
+"et variés. Les mathématiques et des sciences sont déjà disponibles. Le "
+"programme éducatif s'étend de la maternelle à l'université, et les devoirs "
+"que nous proposons guident les étudiants en fonction de leurs besoins, à "
+"l'aide d'algorithmes modernes, capables d'identifier les forces et les "
+"faiblesses individuelles."
+msgstr "تقدم أكاديمية رواد المستقبل دورات و دروس الدعم والفعاليات التعليمية الشيقة التي تتيح للطلاب التعلم بالسرعة التي تناسبهم ، داخل وخارج الفصول الدراسية. مواضيع متنوعة ومتغيرة. الرياضيات والعلوم متاحة بالفعل. يعمل البرنامج التعليمي من روضة الأطفال إلى الجامعة ، والواجبات التي نقدمها توجه الطلاب وفقًا لاحتياجاتهم ، باستخدام خوارزميات حديثة ، قادرة على تحديد نقاط القوة والضعف الفردية."
+
+#: .\accueil\templates\about.html:31
+msgid ""
+"Nous travaillons dur pour faire de Future Pioneers Academy une école privée "
+"prospère. Nous sommes une équipe de personnes différentes animées par la "
+"même volonté de donner à chacun accès à une éducation de qualité. Nous "
+"sommes des enseignants, des formateurs et des baby-sitters compétants pour "
+"vous ou votre enfants."
+msgstr "نحن نعمل بجد لجعل أكاديمية رواد المستقبل مدرسة خاصة ناجحة. نحن فريق من أشخاص مختلفين مدفوعين بنفس الرغبة في منح الجميع إمكانية الوصول إلى تعليم جيد. نحن مدرسون ومدربون وجليسات أطفال أكفاء لك أو لأطفالك."
+
+#: .\accueil\templates\about.html:39
+msgid "Créateur de l'Academie Pionniers Future"
+msgstr "مؤسس أكاديمية رواد المستقبل"
 
 #: .\accueil\templates\accueil.html:17
 msgid "académie des pionnier future"
